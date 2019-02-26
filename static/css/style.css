@@ -1,0 +1,113 @@
+h1 {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    font-size: 86px;
+    letter-spacing: 30px;
+}
+
+nav {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    font-size: 46px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+.main-body {
+    font-family: 'EB Garamond', serif;
+    border: 2px solid black;
+    margin: 100px;
+    border-radius: 20%;
+}
+
+.articles {
+    text-align: center;
+}
+
+.author-show {
+    font-size: 38px;
+}
+
+.show-content {
+    margin-top: 200px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.show-comments {
+    margin-left: 100px;
+}
+
+.add-comment {
+    margin-left: 700px;
+}
+.comment-ins {
+    display: block;
+    height: 40px;
+}
+
+.add-comment textarea {
+    display: block;
+}
+.show-comments h4 {
+    font-size: 28px;
+}
+
+.show-comments p {
+    font-size: 20px;
+    margin-left: 75px;
+}
+
+.back-btn {
+    margin-top: 100px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.author-list {
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 42px;
+}
+
+.author-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.authors-articles {
+    font-size: 36px;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+}
+
+.authors-articles a {
+   text-decoration: none;
+   color: black;
+}
+
+.author-new-post {
+    text-align: center;
+    font-size: 38px;
+}
+
+.author-new-post a {
+   color: black;
+}
+
+.author-form {
+    text-align: center;
+}
+
+.author-form input {
+    height: 70px;
+}
