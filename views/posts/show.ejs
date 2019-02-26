@@ -1,5 +1,5 @@
 <h1 class="title-show"> <%= post.title %></h1>
-<h1 class="author-show"> by <%= post.author.name %> </h1>
+<h1 class="author-show"> by <%= post.author.name %><br> posted: <%var date = new Date()%><%= date.getMonth() + 1%>/<%= date.getFullYear()%> </h1>
 
 <p class="show-content"><%= post.content %></p>
 
@@ -9,18 +9,18 @@
 
 <h1> COMMENTS: </h1>
 
-<form class="add-comment" action="" method="POST">
+<form class="add-comment" action="/comments" method="POST">
     <input class="comment-ins"type="text" name="name" placeholder="Name" required>
     <textarea type="text" name="content" placeholder="Comment..." required></textarea>
-    <input hidden type="text" name="postId" value="<%= post.Id%>">
+    <input hidden type="text" name="postId" value="<%= post.id%>">
     <input class="comment-ins"type="submit" value="Add Comment!">
 </form>
 
 <section class="show-comments">
 <% post.comments.forEach(function(comment) {%>
     <div class="well">
-        <h4><%= comment.content %></h4>
-        <p>By: <%= comment.name%></p>
+        <h4>"<%= comment.content %>"</h4>
+        <p><b>-</b> <%= comment.name%></p>
 
     </div>
 <% }); %>

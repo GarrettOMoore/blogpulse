@@ -39,15 +39,5 @@ router.get('/:id', function(req, res){
     });
 });
 
-router.post('/:id', function(req, res){
-    db.comment.create({
-            name: req.body.name,
-            content: req.body.content,
-            postId: req.params.id
-        }).then(function(comment) {
-        res.redirect('/posts/' + req.params.id)
-        })
-    });
-
 
 module.exports = router;
